@@ -13,6 +13,14 @@
         android:theme="@style/Theme.StudentMan"
         tools:targetApi="31">
         <activity
+            android:name=".EditStudentActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="vn.edu.hust.EDIT_STUDENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
